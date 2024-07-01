@@ -1,0 +1,132 @@
+*,
+html,
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+
+/* NAVBAR START */
+nav{
+    width: 100%;
+
+    margin: auto;
+    text-align: center;
+
+}
+
+nav .container{
+}
+
+nav .container ul{
+    padding: 10px;
+
+    background-color: #00979C;
+
+}
+
+nav .container ul li{
+    display: inline-block;
+    padding: 5px;
+
+    list-style-type: none;
+
+    width: 80%;
+}
+
+
+nav .container ul li .judul{
+
+    font-size: 34px;
+
+}
+
+nav .container ul li a{
+    color: white;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    padding: 10px;
+} nav .container ul li a:hover{
+    color: white;
+
+    border-radius: 5px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+    box-shadow: 0 0 400px 1px white;
+}
+/* NAVBAR END */
+
+
+/* Hero START */
+.hero{
+    width: 100%;
+}
+
+.hero .container{
+    padding: 10px;
+}
+
+.hero .container a{
+    width: 100%;
+}
+
+.hero .container a img{
+    width: 100%;
+
+    max-height: 500px;
+    object-fit: cover;
+}
+/* Hero END */
+
+
+/* Background content */
+.background-content{
+    background-color: #00979C;
+}
+
+/* Background content */
+/* Content START */
+.content{
+    margin: auto;
+    width: 100%;
+    color: white;
+}
+
+.content .container{
+    padding: 40px;
+}
+
+/* Content END */
+
+
+
+/* Arduino START */
+.arduino{
+    width: 100%;
+}
+
+.arduino .container{
+    padding: 10px;
+}
+
+.arduino .container ul{
+    display: flex;
+    justify-content: center;
+}
+
+.arduino .container ul a{
+    padding: 5px;
+}
+
+.arduino .container ul a img{
+    width: 100%; 
+
+}
+
+
+/* Arduino END */
