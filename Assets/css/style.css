@@ -103,8 +103,7 @@ nav .container ul li a{
 }
 
 .content .container{
-    padding: 15px;
-/*     padding: 40px; */
+    padding: 40px;
 }
 
 /* Content END */
@@ -117,8 +116,7 @@ nav .container ul li a{
 }
 
 .arduino .container{
-    padding: 5px;
-/*     padding: 10px; */
+    padding: 10px;
 }
 
 .arduino .container ul{
@@ -156,7 +154,7 @@ nav .container ul li a{
 }
 
 .praktik .container{
-    padding: 60px; 
+    padding: 20px; 
 }
 
 .praktik .container table tr td img{
