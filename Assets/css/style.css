@@ -23,7 +23,7 @@ nav .container{
 nav .container ul{
     padding: 10px;
 
-    background-color: #00979C;
+    background-color: #027a7e;
 
 }
 
@@ -93,7 +93,12 @@ nav .container ul li a{
 /* Content START */
 .content{
     margin: auto;
-    width: 100%;
+
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    min-width: 100%;
     color: white;
 }
 
@@ -130,3 +135,35 @@ nav .container ul li a{
 
 
 /* Arduino END */
+
+
+
+.praktik{
+    margin: auto;
+    color: white;
+
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+
+    min-width: 100%;
+
+    background-color: #027a7e;
+}
+
+.praktik .container{
+    padding: 40px; 
+}
+
+.praktik .container table tr td img{
+    width: 100%;
+    
+}
+
+.praktik .container img{
+
+    max-height: 1800px;
+    object-fit: cover;
+}

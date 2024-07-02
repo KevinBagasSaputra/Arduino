@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arduino</title>
+    <title>Kevin | Documentation PKL</title>
 
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="icon" type="icon" href="https://brandslogos.com/wp-content/uploads/images/large/arduino-logo-1.png"/>
@@ -18,8 +18,8 @@
                 <li><a href="" class="judul">Arduino</a></li>
 
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#dokumen">Documentation</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,7 @@
     </div>
     <!-- Hero END -->
 
-    <div class="background-content">
+    <div class="background-content" id="about">
 
     <!-- Content START -->
         <div class="content">
@@ -127,7 +127,7 @@
                     </a>
 
                     <a href="">
-                        <img src="https://www.researchgate.net/publication/350969750/figure/fig1/AS:1014287296372749@1618836344708/Gambar-7-Tampilan-Arduino-IDE.ppm" alt="">
+                        <img src="Assets\img\Content\Arduino_IDE.ppm" alt="">
                         <h2>Arduino IDE</h2>
                         <p>Software</p>
                     </a>
@@ -135,6 +135,100 @@
             </div>
         </div>
     <!-- Arduino END -->
+
+
+
+    <!-- Praktik Arduino START-->
+    <div class="praktik" id="dokumen">
+        <div class="container">
+            <h2>Hari ke 2, Praktik Arduino</h2>
+            <p>Mematikan dan Menyalakan Lampu</p>
+<br>            
+            <ul>
+                <p>Komponen yang harus dipersiapkan</p>
+
+                <table border="2" style="background-color: white; color: black; padding: 5px; text-align: center;">
+                    <tr>
+                        <th>Arduino Uno R3</th>
+                        <th>Breadboard</th>
+                        <th>Kabel Jumper</th>
+                        <th>Led</th>
+                        <th>Kabel Type B</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="Assets\img\Alat\1_Arduino_Uno_R3.jpg" alt="" ></td>
+                        <td><img src="Assets\img\Alat\2_Breadboard_400.jpg" alt="" ></td>
+                        <td><img src="Assets\img\Alat\4_Kabel-Jumper.jpg" alt="" ></td>
+                        <td><img src="Assets\img\Alat\5_LED.jpg" alt="" ></td>
+                        <td><img src="Assets\img\Alat\3_Usb_Type-B.jpg" alt="" ></td>
+                    </tr>
+                </table>
+            </ul>
+
+<br>
+
+            <p># Led terdapat panjang kaki yang berbeda, masing-masing kaki memiliki.<br>
+                Makna tersendiri; </p>
+                <li>Panjang = Positif ( + )</li>
+                <li>Pendek = Negatif ( - )</li>
+
+<br>
+
+            <!-- Cara Pertama -->
+                <h2>Cara Pertama</h2>
+
+                <table border="2" style="background-color: white; color: black; padding: 5px; text-align: center;">
+                <tr>
+                    <th>Kabel Jumper (2)</th>
+                    <th>Kabel Usb Type B (1)</th>
+                    <th>Sisahan Kabel Jumper yang Sudahditancap</th>
+                    <th>Led (1)</th>
+
+                </tr>
+
+                <tr>
+                    <td>Dimasukkan pada Arduino Uno R3, karena terdapat 2 unit yang akan dipasangkan. <br>
+                        Maka unit 1, di pasang ke lubang <b>3.3V</b> dan unit ke 2 <b>Gnd</b>.
+                    </td>
+                    
+                    <td>Tancapkan kabel USB Type B ke Arduino, kemudian kabel satunya lagi.<br>
+                        yaitu USB Type A masukkan pada perangkat Laptop atau Komputer. Sesuai dengan perangkat yang kalian gunakan.
+                    </td>
+
+                    <td>Karena kabel jumper sebelumnya sudah tertancap pada masing-masing port.<br>
+                        Sekarang terdapat 2 kabel Jumper yang belum tertancap, maka kita tancapkan pada Beardboard. <br>
+                        <b>3.3V => Positif, Gnd => Negatif</b>
+                    </td>
+
+                    <td>Tancapkan 1 buah LED pada Breadboard. <br>
+                        <b>Kaki panjang</b> tancapkan ke <b>kutub positif.</b> <br>
+                        Kaki pendek tancapkan ke <b>kutub negatif.</b> <br>
+                        sertakan penempatan LED tersebut sesuai tempat yang semestinya.
+                    </td>
+                </tr>
+            </table>
+                <img src="Assets\img\Cara\Cara_Pertama.jpg" alt="Cara Pertama" width="100%">
+
+
+            
+
+
+
+
+        <!-- Cara Kedua -->
+         
+        </div>
+    </div>
+    <!-- Praktik Arduino END-->
 
 </body>
 </html>
