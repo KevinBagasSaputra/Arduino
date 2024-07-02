@@ -143,7 +143,9 @@ nav .container ul li a{
     color: white;
 
     max-width: 100%;
-
+    /* display: flex;
+    justify-content: center; */
+    
 
 
     min-width: 100%;
@@ -157,6 +159,7 @@ nav .container ul li a{
 
 .praktik .container table tr td img{
     width: 100%;
+    
 }
 
 .praktik .container img{
