@@ -263,12 +263,11 @@
             <table border="2" style="background-color: white; color: black; text-align: center; width: 100%;">
                 <tr>
                     <th>Void Setup()</th>
-                    <th>Void loop() </th>
-
                 </tr>
 
                 <tr>
                     <td>{
+                        
                         #define lampu_1_positif 1 //1 ini berarti interface led yang kita colokkan yaitu 1(Positif / Panjang) #Artinya kita mendeklarasikan Variabel <br>
                         #define lampu_0_negatif 0 //0 juga interface led yang kita colokkan yaitu 0(Negatif / Pendek) <br>
                             pinMode(lampu_1_positif, OUTPUT); <br>
@@ -276,8 +275,18 @@
                     }
                     </td>
 
-                    <td>
-                        {
+                </tr>
+            </table>
+                    <!-- Lanjutannnya -->
+            <br>
+            <table border="2" style="background-color: white; color: black; text-align: center; width: 100%;">
+                <tr>
+                    <th>Void loop()</th>
+                </tr>
+
+                <tr>
+                    <td>{
+                        
                         digitalWrite(lampu_1_positif, HEIGH); <br>
                         digitalWrite(lampu_0_negatif, LOW; <br>
                         delay (100); <br>
@@ -285,13 +294,17 @@
                         digitalWrite(lampu_0_negatif, HEIGH);<br>
                         digitalWrite(lampu_1_positif, LOW); <br>
                         delay (100);
-                        }
+                        
+                    }
                     </td>
 
                 </tr>
             </table>
 
-         
+
+
+
+            
         </div>
     </div>
     <!-- Praktik Arduino END-->
