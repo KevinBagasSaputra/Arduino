@@ -241,7 +241,6 @@
                 <tr>
                     <th>Kabel Usb Type B (1) </th>
                     <th>Led</th>
-                    <th>Sisahan Kabel Jumper yang Sudah ditancap</th>
 
                 </tr>
 
@@ -256,7 +255,44 @@
                         Panjang = 1 (Positif).
                     </td>
 
-                    <!-- Masih ada lagi lanjutannya-->
+                </tr>
+            </table>
+                    <!-- Lanjutannnya -->
+            <br>
+            <h2> Lanjutannya (Lakukan pada Software Arduino IDE) </h2>
+            <table border="2" style="background-color: white; color: black; text-align: center; width: 100%;">
+                <tr>
+                    <th>Void Setup()</th>
+                    <th>Void loop() </th>
+
+                </tr>
+
+                <tr>
+                    <td>{
+                        #define lampu_1_positif 1 //1 ini berarti interface led yang kita colokkan yaitu 1(Positif / Panjang) #Artinya kita mendeklarasikan Variabel <br>
+                        #define lampu_0_negatif 0 //0 juga interface led yang kita colokkan yaitu 0(Negatif / Pendek) <br>
+                            pinMode(lampu_1_positif, OUTPUT); <br>
+                            pinMode(lampu_0_negatif, OUTPUT);
+                    }
+                    </td>
+
+                    <td>
+                        {
+                        digitalWrite(lampu_1_positif, HEIGH); <br>
+                        digitalWrite(lampu_0_negatif, LOW; <br>
+                        delay (100); <br>
+
+                        digitalWrite(lampu_0_negatif, HEIGH);<br>
+                        digitalWrite(lampu_1_positif, LOW); <br>
+                        delay (100);
+                        }
+                    </td>
+                    
+                    <td>Tancapkan Led pada.<br>
+                        DIGITAL (PWM ~). <br>
+                        Pendek = 0 (Negatif) <br>
+                        Panjang = 1 (Positif).
+                    </td>
 
                 </tr>
             </table>
