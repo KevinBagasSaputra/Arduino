@@ -167,3 +167,28 @@ nav .container ul li a{
     max-height: 100%;
     object-fit: cover;
 }
+
+/* Praktik END */
+
+
+
+/* Hari Selanjutnya START */
+.hari-selanjutnya{
+    margin: auto;
+    color: white;
+
+    max-width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    
+
+
+    min-width: 100%;
+
+    background-color: #00979C;
+}
+
+.hari-selanjutnya .container{
+    padding: 20px; 
+}
+/* Hari Selanjutnya END */

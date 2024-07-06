@@ -142,6 +142,8 @@
     <div class="praktik" id="dokumen">
         <div class="container">
             <h2>Hari ke 2, Praktik Arduino</h2>
+<hr>
+<br>
             <p>Mematikan dan Menyalakan Lampu</p>
 <br>            
             <ul>
@@ -323,12 +325,11 @@
                     </td>
                     
                     <td>
-                         <ol>Kabel Jumper colok-kan pada <b>DIGITAL (PWM ~ )</b>
-                            <li><!-- 1. --> pada Gnd</li> <br>
-                            <li><!--2. --> pada 12</li>  <br>
-                            <li><!--3. --> pada 13</li>  <br>
-                            peletakan nomor 12 dan 13 sebenarnya bebas, ini hanya sebagai contoh
-                        </ol>
+                        Kabel Jumper colok-kan pada <b>DIGITAL (PWM ~ )</b>
+                        <li> 1. pada Gnd</li> <br>
+                        <li> 2. pada 12</li>  <br>
+                        <li> 3. pada 13</li>  <br>
+                        peletakan nomor 12 dan 13 sebenarnya bebas, ini hanya sebagai contoh
                     </td>
                     
                     <td>
@@ -352,11 +353,11 @@
                         Kabel-kabel jumper yang sudah tercolok pada Arduino Uno R3 <br>
                         Kita colok-kan sisah kabelnya pada Beradboard<br>
 
-                        <ol>Kabel Jumper
-                            <li> <!-- 1. -->  Gnd colok ke <b>Negatif</b></li> <br>
-                            <li> <!-- 2. --> Kabel nomor 12 dari Arduino colok ke Area bebas pada Beradboard</li> <br>
-                            <li> Kabel nomor 13 dari Arduino begitupun seperti nomor 2. </li>
-                        </ol>
+                        Kabel Jumper
+                        <li> 1.  Gnd colok ke <b>Negatif</b></li> <br>
+                        <li> 2. Kabel nomor 12 dari Arduino colok ke Area bebas pada Beradboard</li> <br>
+                        <li> 3. Kabel nomor 13 dari Arduino begitupun seperti nomor 2. </li>
+                        
                     </td>
 
 
@@ -377,5 +378,74 @@
     </div>
     <!-- Praktik Arduino END-->
 
+
+    <!-- Hari ke 3 dan 4 START-->
+     <div class="hari-selanjutnya">
+        <div class="container">
+            <h1>Hari ke 3 & 4</h1>
+<hr>
+<br>
+
+            <p>Praktik Arduino, membuat lampu berjalan,
+                dengan menggunakan <b>Software Arduino IDE</b>
+            </p>
+            <p>Langkah yang dilakukan sama seperti <b>Cara ketiga</b></p>
+
+<br>
+
+            <p>Terdapat 12 penomoran mulai dari nomor, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13</p>
+<br>
+            <p>1 kabel jumper pada GND (DIGITAL)</p>
+<br>
+            <p>Saat init kita menggunakan perulangan for. Untuk membuat lampu menyala sesuai prefrensi masing-masing</p>
+            
+
+<br>
+
+            <h3>Kode Program</h3>
+            <img src="Assets\img\Latihan\hari_4.png" alt="" width="100%">
+            <p>Penjelasan <br>
+                Lampu akan bergerak dari <b>kiri ke kanan</b> <br>
+                Kemudian, akan menyala satu-satu. Sesuai dengan yang ada pada <b>method loop</b>
+            </p>
+            
+<br>
+            
+            <h3>Hasil Program</h3>
+            <video src="Assets\img\Latihan\hari_4.mp4" width="100%"></video>
+            <img src="Assets\img\Latihan\hari_3.jpg" alt="" width="100%">
+
+<!-- Hari ke 5 -->
+        <h1>Hari ke 5</h1>
+<hr>
+<br>
+            
+        <p>Praktik Arduino, membuat lampu redup-terang, redup-terang <br>
+            dengan menggunakan <b>Software Arduino IDE</b>
+        </p>
+<br>
+        <p>
+            Materi kali ini adalah menggunakan <b>analogWrite</b> <br>
+            dengan parameter analogWrite kita dapat memberikan <b>nilai kecerahan pada lampu</b>
+        </p>
+<br>
+        <p>
+            <b>Penting!</b> <br>
+            Jangan lupa menempatkan colokan kabel pada Arduino Uno tepat di PWM <br>
+            Dengan nomor yang memiliki simbol <b>~</b>. 9~
+            Supaya redup dan terang-nya terlihat smooth. <br> <br>
+
+            Adaupun arti dari simbol tersebut yaitu <br> 
+            <b>~ = Tak terhingga</b>(pada pengertian matematika-nya) 
+        </p>
+
+        <br>
+            
+        <img src="Assets\img\Latihan\hari_5_analogWrite.jpg" alt="Hari ke 5 analog" width="100%">
+        <!-- Hasilnya lupa difotokan -->
+         </div>
+        </div>
+
+    <!-- Hari ke 3 dan 4 END-->
 </body>
 </html>
