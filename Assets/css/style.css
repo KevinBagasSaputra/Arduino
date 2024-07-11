@@ -5,6 +5,7 @@ body{
     margin: 0;
 
     font-family: sans-serif;
+    letter-spacing: 0.2pt;
 }
 
 
@@ -163,9 +164,9 @@ nav .container ul li a{
 }
 
 .praktik .container img{
+    max-width: 100%;
 
-    max-height: 100%;
-    object-fit: cover;
+    max-height: 600px;
 }
 
 /* Praktik END */
@@ -180,8 +181,6 @@ nav .container ul li a{
     max-width: 100%;
     /* display: flex;
     justify-content: center; */
-    
-
 
     min-width: 100%;
 
@@ -191,4 +190,144 @@ nav .container ul li a{
 .hari-selanjutnya .container{
     padding: 20px; 
 }
+
+.hari-selanjutnya img{
+    max-width: 100%;
+
+    max-height: 600px;
+}
+
+.hari-selanjutnya .kode_program{
+    text-align: center;
+    background-color: #ff9632;
+}
+
+
+.hari-selanjutnya h3{
+    text-align: center;
+    background-color:#FF5733;
+}
+
+.hasil_program{
+    display: flex;
+
+    inline-size: 500px;
+}
+
+.hasil_program .container ul{
+}
+
+.hasil_program .container video{
+    max-width: 100%;
+
+    max-height: 600px;
+}
+
+.hasil_program .container img{
+    max-width: 100%;
+
+    max-height: 600px;
+}
 /* Hari Selanjutnya END */
+
+
+
+/* Hari ke 5 START */
+.hari_ke_5{
+    margin: auto;
+    color: white;
+
+    max-width: 100%;
+    /* display: flex;
+    justify-content: center; */
+
+    min-width: 100%;
+
+    background-color: #027a7e;
+}
+
+
+.hari_ke_5 .container{
+    padding: 20px;
+}
+
+.hari_ke_5 .container img{
+    max-width: 100%;
+
+    max-height: 600px;
+}
+
+
+/* Hari ke 5 END */
+
+
+
+/* Hari ke 6 START */
+.hari_ke_6{
+    margin: auto;
+    color: white;
+
+    max-width: 100%;
+    /* display: flex;
+    justify-content: center; */
+
+    min-width: 100%;
+
+    background-color: #00979C;
+}
+
+.hari_ke_6 .container{
+    padding: 20px;
+}
+
+.hari_ke_6 .container img{
+    max-width: 100%;
+
+    /* max-height: 600px; */
+}
+
+
+.hari_ke_6 .project{
+    width: 100%;
+}
+
+.hari_ke_6 .project .container{
+    display: flex;
+    justify-content: center;
+}
+
+.hari_ke_6 .project .container ul{
+    border: 2px solid white;
+    padding: 10px;
+
+    background-color: black;
+}
+/* Hari ke 6 END */
+
+
+/* Hari ke 8  START */
+.hari_ke_8{
+    padding: 20px;
+}
+/* Hari ke 8  END */
+
+/* Hari ke 9  START */
+.hari_ke_9{
+    padding: 20px;
+    background-color: red;
+
+    color: white;
+}
+/* Hari ke 9  END */
+
+
+
+
+
+
+
+/* TANGGAL START */
+.tanggal{
+    padding:10px;
+}
+/* TANGGAL END */
