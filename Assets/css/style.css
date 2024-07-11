@@ -211,7 +211,7 @@ nav .container ul li a{
 .hasil_program{
     display: flex;
 
-    inline-size: 500px;
+/*     inline-size: 500px; */
 }
 
 .hasil_program .container ul{
