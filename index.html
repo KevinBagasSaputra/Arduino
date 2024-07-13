@@ -272,13 +272,17 @@
                 </tr>
 
                 <tr>
-                    <td>{
+                    <td> <!--{
                         
                         #define lampu_1_positif 1 //1 ini berarti interface led yang kita colokkan yaitu 1(Positif / Panjang) #Artinya kita mendeklarasikan Variabel <br>
                         #define lampu_0_negatif 0 //0 juga interface led yang kita colokkan yaitu 0(Negatif / Pendek) <br>
                             pinMode(lampu_1_positif, OUTPUT); <br>
                             pinMode(lampu_0_negatif, OUTPUT);
-                    }
+                    } -->
+
+                    <img src="Assets\img\Hari_ke_2\1_Void_Setup.jpg" alt="">
+
+
                     </td>
 
                 </tr>
@@ -291,7 +295,7 @@
                 </tr>
 
                 <tr>
-                    <td>{
+                    <td><!-- {
                         
                         digitalWrite(lampu_1_positif, HEIGH); <br>
                         digitalWrite(lampu_0_negatif, LOW; <br>
@@ -301,7 +305,11 @@
                         digitalWrite(lampu_1_positif, LOW); <br>
                         delay (100);
                         
-                    }
+                    } -->
+
+                    <img src="Assets\img\Hari_ke_2\2_Void_loop.png.jpg" alt="">
+
+
                     </td>
 
                 </tr>
@@ -423,7 +431,7 @@
                     <ul>
                         <video src="Assets\img\Latihan\hari_4.mp4" alt="Hasil program 3" controls></video>
                     </ul>
-
+                    
                     <ul>
                         <img src="Assets\img\Latihan\hari_3.jpg" alt="Haisl program 4">           
                     </ul>
@@ -522,8 +530,432 @@
 
         </div>
     </div>
-    <!-- Hari ke 6 & 7 END -->
+    
+
+        <div class="langkah_pengerjaan">
+            <div class="container">
+                <h3>Langkah Pengerjaan</h3>
+                <p>Project 1(10 variasi lampu menyala)</p> <br>
+
+                <p>1. PIN PWM dari 2-13</p> <br>
+                <p>2. GND(PWM) to Negatif</p> <br>
+                <p>3. Siapkan Led, tancapkan Led mulai dari Kaki panjang ke luar kutub(aliran listrik positif ataupun negatif)</p> <br>
+                    <p>Tancapkan kaki pendek(Negatif) ke sumbu negatif yang berada pada kabel_jumper(GND -> sumbu negatif)</p> <br>
+
+                <p>4. Siapkan 2 buah lampu lalulintas, kemudian tancapkan pada analog, A0(14) - A5(19)</p> <br>
+
+                <p>Selebihnya akan melakukan konfigurasi pada <b>software Arudino IDE</b> </p>
+                <textarea rows="10" cols="42">
+int cepat = 75;
+int cepat_sekali = 50;
+int lambat = 150;
+
+void setup() {
+  //Mendeklarasikan sebuah OUTPUT, supaya mengalirkan listrik
+  for (int i=0; i<= 13; i++)
+  {
+    pinMode(i, OUTPUT);
+  }
+
+  pinMode(1, OUTPUT); pinMode(2, OUTPUT); pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT); pinMode(5, OUTPUT); pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT); pinMode(8, OUTPUT); pinMode(9, OUTPUT); 
+  pinMode(10, OUTPUT); pinMode(11, OUTPUT); pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+
+// Analog 
+  pinMode(14, OUTPUT);
+  pinMode(15, OUTPUT);
+  pinMode(16, OUTPUT);
+
+// Analog 
+  pinMode(17, OUTPUT);
+  pinMode(18, OUTPUT);
+  pinMode(19, OUTPUT);
+
+  for (int i=14; i<= 16; i++){
+    pinMode(i, OUTPUT);
+  }
+}
+
+void loop() {
+  // Memanggil method untuk menjalankan Fungsinya  ========================================================
+  lalu_lintas();          // 1
+  delay(lambat);
+
+  menyala();              // 2
+  delay(lambat);
+
+  kembali();              // 3
+  delay(lambat);
+
+  kelap_kelip();           // 4  
+  kelap_kelip();           // 4  
+  kelap_kelip();           // 4  
+  kelap_kelip();           // 4  
+  kelap_kelip();           // 4  
+  delay(lambat);
+
+  kiri();                  // 5  
+  delay(lambat);
+
+
+  digitalWrite(1, 1); digitalWrite(2, 1); digitalWrite(3, 1);
+  digitalWrite(4, 1); digitalWrite(5, 1); digitalWrite(6, 1);
+  digitalWrite(7, 1); digitalWrite(8, 1); digitalWrite(9, 1); 
+  digitalWrite(10,1); digitalWrite(11, 1); digitalWrite(12, 1);
+  digitalWrite(13,1);
+
+
+  digitalWrite(17, 1);
+  digitalWrite(18, 1);
+  digitalWrite(19, 1);
+
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+
+  kanan();                  // 6  
+  delay(lambat);
+  kiri();                   // 5  
+  delay(lambat);
+  
+
+  nyala_6_kiri();           // 7
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  // delay(lambat);
+  nyala_6_kiri();           // 7
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  // delay(lambat);
+  nyala_6_kiri();           // 7
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  // delay(lambat);
+  nyala_6_kiri();           // 7
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  // delay(lambat);
+  nyala_6_kiri();           // 7
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  
+
+  // delay(lambat);
+  nyala_6_kanan();          // 8
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+  nyala_6_kanan();          // 8
+
+  // delay(lambat);
+  nyala_6_kiri();           // 7
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+  nyala_6_kiri();          // 7
+
+
+  berurutan_kiri();        // 9
+  nyala_6_kiri();          // 7
+
+  nyala_satu_satu();        // 10
+  nyala_6_kiri();          // 7
+  nyala_6_kanan();          // 8
+  nyala_satu_satu();        // 10
+
+
+// ======================================================================================================================
+}
+
+// menyala START
+void menyala() {
+  for (int i=0; i<=13; i++) {
+    digitalWrite(i, 1); delay(cepat);
+
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+
+
+  digitalWrite(17, 1);
+  digitalWrite(18, 1);
+  digitalWrite(19, 1);
+  }
+
+
+  for (int i=7; i>=1; i--){
+    digitalWrite(i, 0); delay(cepat);
+
+    digitalWrite(14, 1);
+    digitalWrite(15, 0);
+    digitalWrite(16, 0);
+  }
+
+
+for (int i=0; i<=13; i++) {
+  digitalWrite(i, 1); delay(cepat);
+digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+digitalWrite(13,0);
+}
+
+for (int i=7; i>=1; i--){
+  digitalWrite(i, 0); delay(cepat);
+  digitalWrite(14, 1);
+  digitalWrite(15, 1);
+  digitalWrite(16, 0);
+}
+
+  for (int i=0; i<=13; i++) {
+    digitalWrite(i, 1); delay(cepat);
+
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+  }
+
+
+  for (int i=7; i>=1; i--){
+    digitalWrite(i, 0); delay(cepat);
+
+    digitalWrite(14, 1);
+    digitalWrite(15, 1);
+    digitalWrite(16, 1);
+  }
+
+  
+}
+// METHOD ke 1 MENYALA END  
+
+
+
+  // METHOD ke 2 KEMBALI START
+void kembali(){
+  /*
+    for (int i=7; i<=13; i++) {
+      digitalWrite(i,1); delay(cepat);
+    }
+  */
+/*  for (int i=13; i>=1; i--){
+    digitalWrite(i, 0); delay(cepat);
+  }
+*/  digitalWrite(14, 1);
+    digitalWrite(15, 1);
+    digitalWrite(16, 1);
+
+
+  for (int i=16; i>=1; i--){
+    digitalWrite(i, 1); delay(cepat);  
+    
+    digitalWrite(14, 0);
+    digitalWrite(15, 0);
+    digitalWrite(16, 0);
+
+    digitalWrite(17, 0);
+    digitalWrite(18, 0);
+    digitalWrite(19, 0);
+    
+    for (int i=0; i<=16; i++) {
+    digitalWrite(i, 1); delay(cepat_sekali);
+    }
+  digitalWrite(1, 0); digitalWrite(2, 0); digitalWrite(3, 0);
+  digitalWrite(4, 0); digitalWrite(5, 0); digitalWrite(6, 0);
+  digitalWrite(7, 0); digitalWrite(8, 0); digitalWrite(9, 0); 
+  digitalWrite(10,0); digitalWrite(11, 0); digitalWrite(12, 0);
+  digitalWrite(13,0);
+  }
+  // menyala END
+
+
+// lalu_lintas START
+void lalu_lintas(){
+
+    digitalWrite(17, 1);
+    digitalWrite(18, 1);
+    digitalWrite(19, 1);
+    delay(lambat);
+
+    for (int i=16; i>=1; i--){
+    digitalWrite(i, 1); delay(cepat);  
+    
+    digitalWrite(17, 0);
+    digitalWrite(18, 0);
+    digitalWrite(19, 0);
+    delay(cepat);
+    }
+
+}
+// lalu_lintas END
+
+
+// kelap_kelip START
+void kelap_kelip(){
+digitalWrite(2, 0);digitalWrite(3, 0);digitalWrite(4, 0);digitalWrite(5, 0);digitalWrite(6, 0);digitalWrite(7, 0);digitalWrite(8, 0);digitalWrite(9, 0);digitalWrite(10, 0);digitalWrite(11, 0);digitalWrite(12, 0);digitalWrite(13, 0);digitalWrite(14, 0);digitalWrite(15, 0);digitalWrite(16, 0);digitalWrite(17, 0);digitalWrite(18, 0);digitalWrite(19, 0);
+delay(lambat);
+digitalWrite(2, 1);     digitalWrite(3, 1);digitalWrite(4, 1);digitalWrite(5, 1);digitalWrite(6, 1);digitalWrite(7, 1);digitalWrite(8, 1);digitalWrite(9, 1);digitalWrite(10, 1);digitalWrite(11, 1);digitalWrite(12, 1);digitalWrite(13, 1);digitalWrite(14, 1);digitalWrite(15, 1);digitalWrite(16, 1);digitalWrite(17, 1);digitalWrite(18, 1);digitalWrite(19, 1);
+delay(lambat);
+digitalWrite(2, 0);digitalWrite(3, 0);digitalWrite(4, 0);digitalWrite(5, 0);digitalWrite(6, 0);digitalWrite(7, 0);digitalWrite(8, 0);digitalWrite(9, 0);digitalWrite(10, 0);digitalWrite(11, 0);digitalWrite(12, 0);digitalWrite(13, 0);digitalWrite(14, 0);digitalWrite(15, 0);digitalWrite(16, 0);digitalWrite(17, 0);digitalWrite(18, 0);digitalWrite(19, 0);
+delay(lambat);
+
+}
+// kelap_kelip END
+
+// kiri START
+void kiri(){
+  digitalWrite(17,1); digitalWrite(18,0); 
+  digitalWrite(19,0);
+
+  digitalWrite(17,0); digitalWrite(18,1); 
+  digitalWrite(19,0);
+
+  digitalWrite(17,0); digitalWrite(18,0); 
+  digitalWrite(19,1);
+
+
+  digitalWrite(19,0);
+  digitalWrite(16,1); digitalWrite(15,0);
+  digitalWrite(14,0); 
+  digitalWrite(16,0); digitalWrite(15,1);
+  digitalWrite(14,0); 
+  digitalWrite(16,0); digitalWrite(15,0);
+  digitalWrite(14,1); 
+
+
+  digitalWrite(14,0); 
+  digitalWrite(13,1); digitalWrite(12, 0);
+  digitalWrite(11, 0); 
+  digitalWrite(13,0); digitalWrite(12, 1);
+  digitalWrite(11, 0); 
+  digitalWrite(13,0); digitalWrite(12, 0);
+  digitalWrite(11, 1); 
+
+
+  digitalWrite(11, 0); 
+  digitalWrite(10,1); digitalWrite(9, 0);
+  digitalWrite(8, 0); 
+
+  digitalWrite(10,0); digitalWrite(9, 1);
+  digitalWrite(8, 0); 
+
+  digitalWrite(10,0); digitalWrite(9, 0);
+  digitalWrite(8, 1); 
+
+
+  digitalWrite(8, 0); 
+  digitalWrite(7, 1); digitalWrite(6, 0);
+  digitalWrite(5, 0); 
+
+  digitalWrite(7, 0); digitalWrite(6, 1);
+  digitalWrite(5, 0); 
+
+  digitalWrite(7, 0); digitalWrite(6, 0);
+  digitalWrite(5, 1); 
+
+
+  digitalWrite(5, 0); 
+  digitalWrite(4, 1); 
+  digitalWrite(3, 0); digitalWrite(2, 0);
+
+  digitalWrite(4, 0); 
+  digitalWrite(3, 1); digitalWrite(2, 0);
+
+  digitalWrite(4, 0); 
+  digitalWrite(3, 0); digitalWrite(2, 1);
+}
+// kiri END
+
+
+// Kanan START
+void kanan(){
+  for (int i=13; i>=1; i--) {
+    digitalWrite(i, 0); delay(cepat);
+  }
+}
+// Kanan END
+
+
+
+// Nyala 5 kiri START
+void nyala_6_kiri(){
+  digitalWrite(13,1);
+  digitalWrite(12, 1);
+  digitalWrite(11, 1);
+  digitalWrite(10,1);
+  digitalWrite(9, 1); 
+  digitalWrite(8, 1); 
+
+  digitalWrite(7, 0); 
+  digitalWrite(6, 0);
+  digitalWrite(5, 0); 
+  digitalWrite(4, 0); 
+  digitalWrite(3, 0);
+  digitalWrite(2, 0); 
+  digitalWrite(1, 0); 
+}
+// Nyala 5 kanan END
+
+
+// Nyala 5 kiri START
+void nyala_6_kanan(){
+  digitalWrite(7, 1); 
+  digitalWrite(6, 1);
+  digitalWrite(5, 1); 
+  digitalWrite(4, 1); 
+  digitalWrite(3, 1);
+  digitalWrite(2, 1); 
+  digitalWrite(1, 1); 
+  
+  digitalWrite(13,0);
+  digitalWrite(12,0);
+  digitalWrite(11,0);
+  digitalWrite(10,0);
+  digitalWrite(9, 0); 
+  digitalWrite(8, 0); 
+}
+// Nyala 5 kiri END
+
+
+// Berurutan Kiri START
+void berurutan_kiri(){
+    for(int i=2; i<=13; i++){
+      digitalWrite(i, 1); delay(lambat);
+    }
+
+    for(int i=13; i>=1; i--){
+      digitalWrite(i, 1); delay(lambat);
+    }
+}
+// Berurutan Kiri END
+
+
+// Berurutan Kanan START
+void nyala_satu_satu(){
+  for (int i=2; i<=13; i++){
+    digitalWrite(i, 1); delay(cepat); 
+    digitalWrite(i, 0); delay(lambat);
+  }
+}
+// Berurutan Kanan END
+
+                </textarea>
+            </div>
+        </div>
     </div>
+
 </div>
 
 
@@ -539,8 +971,8 @@
 
     <!-- Hari ke 9 START -->
      <div class="hari_ke_9">
-        <h2>Hari ke 9 pengembangan website dokumentasi</h2>
-        <p class="tanggal">Kamis, 11/07/2024</p> <br>
+        <h2>Hari ke 9 & 10 pengembangan website dokumentasi</h2>
+        <p class="tanggal">Kamis, 11/07/2024 - Jumat, 12/07/2024</p> <br>
 
         <p>Tugas yang diberikan sudah selesai, <br>
             maka saya melakukan pengembangan website dokumentasi ini lebih lanjut
