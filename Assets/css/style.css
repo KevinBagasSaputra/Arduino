@@ -320,6 +320,48 @@ nav .container ul li a{
 }
 /* Hari ke 9  END */
 
+/* Hari ke 10  START */
+.hari_ke_10{
+    padding: 20px;
+    background-color: red;
+
+    color: white;
+}
+/* Hari ke 9  END */
+
+/* Hari ke 11 START */
+.hari_ke_11{
+    padding: 20px;
+    background-color: red;
+    
+    color: white;
+}
+/* Hari ke 11 END */
+
+
+
+
+.hari_ke_12{
+    width: 100%;
+}
+
+
+.hari_ke_12 .container ul{
+    display:flex;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.hari_ke_12 .container img{
+    min-width: 10%;
+    
+    max-width: 40%;
+    max-height: 300px;
+}
+
+/* Hari ke 9  END */
+
 
 
 
