@@ -363,8 +363,83 @@ nav .container ul li a{
 /* Hari ke 9  END */
 
 
+/* Hari ke 13 START */
+.hari_ke_13{
+    width: 100%;
+    
+    color: white;
+    background-color: #00979C;
+}
+
+.hari_ke_13 .container{
+    padding: 20px;
+}
+
+.hari_ke_13 .container ul img{
+    min-width: 100%;
+    
+    max-width: 40%;
+    max-height: 600px;
+    object-fit: cover;
+}
+/* Hari ke 13 END */
 
 
+/* Hari ke 14 START */
+.hari_ke_14{
+    width: 100%;
+
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_14 .container{
+    padding: 20px;
+
+    text-align: center;
+}
+
+.hari_ke_14 .container ul img{
+    min-width: 50%;
+    
+    max-width: 100%;
+    object-fit: cover;    
+}
+
+.hari_ke_14 .container .latihan{
+    padding: 20px;
+}
+.hari_ke_14 .container .latihan ul{
+    display: flex;
+}
+
+.hari_ke_14 .container .latihan img{
+    min-width: 50%;
+
+    max-width: 60%;
+
+}
+/* Hari ke 14 END */
+
+/* Hari ke 15 START */
+.hari_ke_15{
+    width: 100%;
+
+    color: white;
+    background-color: #00979C;
+}
+
+.hari_ke_15 .container{
+    padding: 20px;
+}
+
+.hari_ke_15 .container img{
+    min-width: 50%;
+
+    max-width: 100%;
+    object-fit: cover;
+}
+/* Hari ke 15 END */
 
 
 
