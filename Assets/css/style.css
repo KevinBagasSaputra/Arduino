@@ -467,13 +467,29 @@ nav .container ul li a{
     padding: 20px;
 }
 
+.hari_ke_17 .container .tahap .container{
+    display: flex;
+}
+
 .tahap .container img{
-    min-width: 100%;
+    min-width: 50%;
 
     max-width: 40%;
     max-height: 900px;
 }
 /* Hari ke 17 END */
+
+/* Hari ke 18 START */
+.hari_ke_18{
+    width: 100%;
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_18 .container{
+    padding: 20px;
+}
+/* Hari ke 18 END */
 
 
 
