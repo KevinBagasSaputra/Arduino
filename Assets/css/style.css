@@ -442,6 +442,41 @@ nav .container ul li a{
 /* Hari ke 15 END */
 
 
+/* Hari ke 16 START */
+.hari_ke_16{
+    width: 100%;
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_16 .container{
+    padding: 20px;
+}
+/* Hari ke 16 END */
+
+
+/* Hari ke 17 START */
+.hari_ke_17{
+    width: 100%;
+    color: white;
+    background-color: #00979C;
+
+}
+
+.hari_ke_17 .container{
+    padding: 20px;
+}
+
+.tahap .container img{
+    min-width: 100%;
+
+    max-width: 40%;
+    max-height: 900px;
+}
+/* Hari ke 17 END */
+
+
+
 
 /* TANGGAL START */
 .tanggal{
