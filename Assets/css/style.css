@@ -491,9 +491,118 @@ nav .container ul li a{
 }
 /* Hari ke 18 END */
 
+/* Hari ke 19 START */
+.hari_ke_19{
+    width: 100%;
+    color: white;
+    background-color: #00979C;
+}
+
+.hari_ke_19 .container{
+    padding: 20px;
+}
+
+.hari_ke_19 .container img{
+    width: 100%;
+
+    max-height: 900px;
+    object-fit: cover;
+}
+/* Hari ke 19 END */
+
+/* Hari ke 20 START */
+.hari_ke_20{
+    width: 100%;
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_20 .container{
+    padding: 20px;
+}
+
+.hari_ke_20 .container img{
+    width: 100%;
+
+    max-height: 900px;
+    object-fit: cover;
+}
+/* Hari ke 20 END */
+
+
+/* Hari ke 21 START*/
+.hari_ke_21{
+    width: 100%;
+    color: white;
+    background-color: #00979C;
+}
+
+.hari_ke_21 .container{
+    padding: 20px;
+}
+
+.hari_ke_21 .container a{
+    color: red;
+
+    text-underline-offset: 5px;
+}
+
+/* Hari ke 21 END*/
+
+
+/* Hari ke 22 START */
+.hari_ke_22{
+    width: 100%;
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_22 .container{
+    padding: 20px;
+}
+
+.hari_ke_22 .container ul li{
+    padding: 10px;
+}
+/* Hari ke 22 END */
+
+/* Hari ke 23 START */
+.hari_ke_23{
+    width: 100%;
+    color: white;
+    background-color: #00979C;
+}
+
+.hari_ke_23 .container{
+    padding: 20px;
+}
+
+.hari_ke_23 .container ul li{
+    padding: 10px;
+}
+/* Hari ke 23 END */
 
 
 
+/* Hari ke 24 START */
+.hari_ke_24{
+    padding: 20px;
+}
+/* Hari ke 24 END */
+
+
+/* Hari ke 25 START */
+.hari_ke_25{
+    width: 100%;
+    color: white;
+    background-color: #027a7e;
+}
+
+.hari_ke_25 .container{
+    padding: 20px;
+}
+
+/* Hari ke 25 END */
 /* TANGGAL START */
 .tanggal{
     padding:10px;
