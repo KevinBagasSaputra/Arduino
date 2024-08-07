@@ -1073,6 +1073,8 @@ void nyala_satu_satu(){
                     <img src="Assets\img\Hari_ke_14\2_Buzzer_nada_do_re_mi_fa_so_la_si_do.jpg" alt="Buzzer pertama">
                     <img src="Assets\img\Hari_ke_14\3_Kode_Buzzer.png" alt="">
                 </ul>
+                <p>Pada perintah kode diatas kita menggunakan fungsi tone</p> <br>
+                <p>Fungsi tone memiliki 3 parameter diantaranya tone<b>(Buzzer, Frekwensi, Time)</b></p>
             </div>
 
         </div>
@@ -1138,7 +1140,8 @@ void nyala_satu_satu(){
                             Gambar yang telah dilapisi oleh lem(bubuk) kemudian masukkan pada Oven. 
                         </p>
 <br>
-                        <p>4. Opsional jika ingin di press kepada baju</p>
+                        <p>4. Opsi ini Opsional jika ingin di press kepada baju <br>
+                        dan juga dapat dilakukan dirumah dengan menggunakan Strika</p>
                     </ul>
             </div>
         </div>
@@ -1156,5 +1159,485 @@ void nyala_satu_satu(){
     </div>
  </div>
 <!-- HARI KE 18 END -->
+
+<!-- HARI KE 19 START -->
+ <div class="hari_ke_19">
+    <div class="container">
+        <h2>Hari ke 19</h2>
+        <p class="tanggal">Kamis, 25/07/2024</p>
+
+        <p>Kami berencana membuka Channel di Taman Siswa 2 untuk menawarkan jasa printing</p> <br>
+        <p>Pak Rudy bernegosiasi kepada pak Rohmat untuk membuka lapak</p>
+        <p>Sebelum itu kami juga melakukan hitung-hitungan mengenai penempatan harga yang ditawarkan pada jasa yang kami bebrikan</p>
+
+        <img src="Assets\img\Hari_ke_19\hitungan_jasa_printing.jpg" alt="Hitung hitungn yang kita lakukan untuk perecanaan kedepannya">
+    </div>
+ </div>
+<!-- HARI KE 19 END -->
+
+<!-- HARI KE 20 START -->
+ <div class="hari_ke_20">
+    <div class="container">
+        <h2>Hari ke 20</h2>
+        <p class="tanggal">Jumat, 26/07/2024</p>
+
+        <p>Pada kali ini kita melanjutkan materi Buzzer</p> <br>
+        <p>Kita mengulas terlebih dahulu materi Buzzer pada sebelumnya, kemudian kita diberikan <b>laihan</b></p> <br>
+        <p>Latihan yang diberikan yaitu Membuat lagu tamansiswa, serta kita menambahkan <b>Led</b> <br>
+        Led sebagai pengiring irama terhadap buzzer, seperti ketika memulai lirik pertama Led bergerak dari lampu 1, kemudian lirik ke 2 bergerak led nya ke baris 2, begitupun seterusnya</b></p> <br>
+
+        <h3>Berikut adalah Kodenya</h3>
+        <textarea rows="30" cols="42" style="background-color: white; border: 2px solid black; padding: 4px; box-shadow: 0 0 1px 3px white; border-radius: 4px;">
+            // Pin LED
+            int l2 = 2; //2 
+            int l3 = 3; //3
+            int l4 = 4; //4
+            int l5 = 5; //5
+            int l6 = 6; //6 
+            int l7 = 7; //7 
+            int l8 = 8; //8 
+            int l10 = 10; //8
+          
+          
+            // Pin LED
+          
+            // Pin Buzzer
+            int p = 9;
+            // Pin Buzzer
+          
+              // put your setup code here, to run once:
+            
+          
+            // Frekwensi Buzzer untuk Nada
+            int n1 = 262; int n2 = 294; int n3 = 330; int n4 = 349;
+            int n5 = 392; int n6 = 440; int n7 = 494; int n8 = 523;   //i = 8
+            // Frekwensi Buzzer untuk Nada
+          
+            // Ketukan
+            int k1 = 1000; //Ketukan 1
+            int k2 = 2000; //Ketukan 2
+          
+            int k3 = 3000; //Ketukan 3
+            int k4 = 4000; //Ketukan 4
+          
+            int k12 = 500; //Ketukan Setengah
+            int k15 = 1500; //Ketukan Setengah
+            // Ketukan
+          
+          void setup() {
+            // put your setup code here, to run once:
+          
+            pinMode(l2, OUTPUT);
+            pinMode(l3, OUTPUT);
+            pinMode(l4, OUTPUT);
+            pinMode(l5, OUTPUT);
+            pinMode(l6, OUTPUT);
+            pinMode(l7, OUTPUT);
+            pinMode(l8, OUTPUT);
+            pinMode(l10, OUTPUT);
+          }
+          
+          void loop() {
+            // Baris 1 START
+            tone(p, 0, k2);              delay(k2); // 0
+          
+            tone(p, n1, k1);             
+            digitalWrite(l2, 1);
+            delay(k1); // 1
+            
+            tone(p, n3, k1);             
+            digitalWrite(l2, 0);
+            digitalWrite(l3, 1);
+            delay(k1); // 3
+          
+            tone(p, n5, k1);             
+            digitalWrite(l3, 0);
+            digitalWrite(l4, 1);
+            delay(k1); // 5
+            
+            tone(p, n8, k4);             
+            digitalWrite(l4, 0);
+            digitalWrite(l5, 1);
+            delay(k4); // 8
+            // Baris 1 END
+          
+          
+            tone(p, 0, k2);              
+            digitalWrite(l5, 0);
+            digitalWrite(l6, 1);
+            delay(k2); // 0
+            
+          
+            // Baris 2 START
+            tone(p, n2, k2);             
+            digitalWrite(l6, 0);
+            digitalWrite(l7, 1);
+            delay(k2); // 2
+          
+            tone(p, n8, k1);             
+            digitalWrite(l7, 0);
+            digitalWrite(l8, 1);
+            delay(k1); // i
+          
+            tone(p, n7, k1);             
+            digitalWrite(l8, 0);
+            digitalWrite(l10, 1);
+            delay(k1); // 7
+          
+            tone(p, n6, k1);             
+            digitalWrite(l10, 0);
+            digitalWrite(l2, 1);
+            delay(k1); // 6
+          
+            tone(p, n5, k4);             
+            digitalWrite(l2, 0);
+            digitalWrite(l3, 1);
+            delay(k4); // 5
+            // Baris 2 END
+          
+          
+            tone(p, 0, k2);              
+            digitalWrite(l3, 0);
+            digitalWrite(l4, 1);
+            delay(k2); // 0
+          
+          
+            // Baris 3 START
+            tone(p, n3, k1);             
+            digitalWrite(l4, 0);
+            digitalWrite(l5, 1);
+            delay(k1); // 3
+          
+            tone(p, n5, k1);             
+            digitalWrite(l5, 0);
+            digitalWrite(l6, 1);
+            delay(k1); // 5
+          
+          
+            tone(p, n2, k1);             
+            digitalWrite(l6, 0);
+            digitalWrite(l7, 1);
+            delay(k1); // 2
+          
+            tone(p, n4, k3);             
+            digitalWrite(l7, 0);
+            digitalWrite(l8, 1);
+            delay(k3); // 4
+          
+            tone(p, n5, k1);             
+            digitalWrite(l8, 0);
+            digitalWrite(l10, 1);
+            delay(k1); // 5
+          
+          
+            tone(p, n6, k2);             
+            digitalWrite(l10, 0);
+            digitalWrite(l2, 1);
+            delay(k2); // 6
+          
+            tone(p, n7, k1);             
+            digitalWrite(l2, 0);
+            digitalWrite(l3, 1);
+            delay(k1); // 7
+          
+            tone(p, n5, k1);             
+            digitalWrite(l3, 0);
+            digitalWrite(l4, 1);
+            delay(k1); // 5
+          
+            tone(p, n3, k4);             
+            digitalWrite(l4, 0);
+            digitalWrite(l5, 1);
+            delay(k4); // 3
+            // Baris 3 END
+          
+          
+            tone(p, 0, k2);              
+            digitalWrite(l5, 0);
+            digitalWrite(l6, 1);
+            delay(k2); // 0
+          
+          
+            // Baris 4 START
+            tone(p, n1, k1);             
+            digitalWrite(l6, 0);
+            digitalWrite(l7, 1);
+            delay(k1); // 1
+          
+            tone(p, n3, k1);             
+            digitalWrite(l7, 0);
+            digitalWrite(l8, 1);
+            delay(k1); // 3
+          
+            tone(p, n5, k1);             
+            digitalWrite(l8, 0);
+            digitalWrite(l10, 1);
+            delay(k1); // 5
+          
+            tone(p, n8, k4);             
+            digitalWrite(l10, 0);
+            digitalWrite(l2, 1);
+            delay(k4); // i
+          
+            tone(p, n2, k2);             delay(k2); // 2
+            tone(p, n8, k1);             delay(k1); // i
+            tone(p, n7, k1);             delay(k1); // 7
+            tone(p, n6, k1);             delay(k1); // 6
+          
+            tone(p, n5, k4);             delay(k4); // 5
+            // Baris 4 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 5 START
+            tone(p, n3, k1);             delay(k1); // 3
+            tone(p, n5, k1);             delay(k1); // 5
+            tone(p, n2, k1);             delay(k1); // 2
+          
+            tone(p, n4, k3);             delay(k3); // 4
+          
+            tone(p, n5, k1);             delay(k1); // 5
+          
+            tone(p, n6, k3);             delay(k3); // 6
+            tone(p, n7, k1);             delay(k1); // 7
+            tone(p, n6, k1);             delay(k1); // 6
+          
+            tone(p, n5, k4);             delay(k4); // 5
+            // Baris 5 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 6 START
+            tone(p, n8, k1);             delay(k1); // 8
+            tone(p, n7, k1);             delay(k1); // 7
+            tone(p, n6, k1);             delay(k1); // 6
+          
+            tone(p, n6, k3);             delay(k3); // 6
+          
+            tone(p, n7, k1);             delay(k1); // 7
+            tone(p, n8, k2);             delay(k2); // i
+            tone(p, n7, k1);             delay(k1); // 7
+            tone(p, n6, k1);             delay(k1); // 6
+          
+            tone(p, n5, k4);             delay(k4); // 5
+            // Baris 6 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 7 START
+            tone(p, n5, k1);             delay(k1); // 5
+            tone(p, n5, k1);             delay(k1); // 5
+            tone(p, n6, k1);             delay(k1); // 6
+          
+            tone(p, n7, k3);             delay(k3); // 7
+          
+            tone(p, n6, k1);             delay(k1); // 6
+            tone(p, n5, k2);             delay(k2); // 5
+          
+            tone(p, n6, k1);             delay(k1); // 6
+            tone(p, n4, k1);             delay(k1); // 4
+          
+            tone(p, n3, k4);             delay(k4); // 3
+            // Baris 7 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 8 START
+            tone(p, 8, k1);              delay(k1); // i
+            tone(p, 7, k1);              delay(k1); // 7
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 6, k3);              delay(k1); // 3
+            tone(p, 7, k1);              delay(k1); // 7
+          
+            tone(p, 8, k2);              delay(k2); // i
+            tone(p, 7, k1);              delay(k1); // 7
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 5, k4);              delay(k4); // 5
+            // Baris 8 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 9 START
+            tone(p, 5, k1);              delay(k1); // 5
+            tone(p, 5, k1);              delay(k1); // 5
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 7, k3);              delay(k3); // 7
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 5, k2);              delay(k2); // 5
+            tone(p, 6, k1);              delay(k1); // 6
+            tone(p, 4, k1);              delay(k1); // 4
+            
+            tone(p, 3, k4);              delay(k4); // 3
+            // Baris 9 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 10 START
+            tone(p, 3, k1);              delay(k1); // 3
+            tone(p, 4, k1);              delay(k1); // 4
+            tone(p, 5, k1);              delay(k1); // 5
+          
+            tone(p, 6, k3);              delay(k3); // 6
+            tone(p, 7, k1);              delay(k1); // 7
+          
+            tone(p, 8, k2);              delay(k2); // i
+            tone(p, 7, k1);              delay(k1); // 7
+            tone(p, 6, k1);              delay(k1); // 6
+            tone(p, 4, k1);              delay(k1); // 4
+          
+            tone(p, 5, k4);              delay(k1); // 5
+            // Baris 10 END
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          
+          
+            // Baris 11 START 
+            tone(p, 5, k1);              delay(k1); // 5
+            tone(p, 5, k1);              delay(k1); // 5
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 7, k3);              delay(k3); // 7
+            tone(p, 6, k1);              delay(k1); // 6
+          
+            tone(p, 5, k2);              delay(k2); // 5
+            tone(p, 7, k1);              delay(k1); // 7
+            tone(p, 2, k1);              delay(k1); // 2
+          
+            tone(p, 8, k4);              delay(k4); // i
+            // Baris 11 END 
+          
+          
+            tone(p, 0, k2);              delay(k2); // 0
+          }
+          
+        </textarea>
+
+        <h3>Hasil Program</h3>
+        <div>
+            <div class="container" style="display: flex;">
+                <ul>
+                    <video src="Assets\img\Hari_ke_20\hari_ke_20_Video_hasil_program.mp4" alt="Hasil program Buzzer lagu Tamansiswa" controls style="width: 100%;"></video>
+                </ul>
+                
+                <ul>
+                    <img src="Assets\img\Hari_ke_20\Hari_ke_20_Gambar_Hasil_program.jpg" alt="Haisl program ">           
+                </ul>
+
+            </div>
+        </div>
+</div>
+ </div>
+<!-- HARI KE 20 END -->
+
+<!-- HARI KE 21 START -->
+ <div class="hari_ke_21">
+    <div class="container">
+        <h2>Hari ke 21</h2>
+        <p class="tanggal">Senin, 29/07/2024</p>
+
+        <p>Dikarenakan Pak Rudy sedang ada urusan diluar</p> <br>
+        <p>Maka jam yang saatnya kami PKL kami sendiri yang bertanggung jawab dalam memanfaatkan jam tersebut</p>
+        <p>Saya sendiri memanfaatkan waktu tersebut untuk mengembangkan Website saya lainnya yaitu <b><a href="https://kevinbagassaputra.github.io/Anime-Odyssey/">Web tentang perpustakaan Anime</a></b></p>
+    </div>
+ </div>
+<!-- HARI KE 21 END -->
+
+<!-- HARI KE 22 START -->
+ <div class="hari_ke_22">
+    <div class="container">
+        <h2>Hari ke 22</h2>
+        <p class="tanggal">Selasa, 30/07/2024</p>
+
+        <p>Pada disiang hari kami diajarin untuk membersihkan mesin Printer DTF</p>
+        <ul>
+            <li>Mulai dari pengoperasian Software</li>
+        </ul>
+
+        <ul>
+            <li>Membersihkan Dumper</li>
+        </ul>
+
+        <ul>
+            <li>dan lain-lain</li>
+        </ul>
+    </div>
+ </div>
+<!-- HARI KE 22 END -->
+
+
+<!-- HARI KE 23 START -->
+ <div class="hari_ke_23">
+    <div class="container">
+        <h2>Hari ke 23</h2>
+        <p class="tanggal">Rabu, 31/07/2024</p>
+
+        <p>Pak Rudy mengundang kami untuk turut hadir pada <b>Job fair</b></p>
+        <p>Yang diselenggarakan di <b>SMK TAMANSISWA 25</b></p>
+
+
+        <ul>
+            <h3>Hal yang kami lakukan</h3>
+
+            <ul>
+                <li>Melakukan Registrasi sebagai tamu</li>
+            </ul>
+
+            <ul>
+                <li>Mendapatkan Browser</li>
+            </ul>
+
+            <ul>
+                <li>dan lain-lain</li>
+            </ul>
+        </ul>
+
+    </div>
+ </div>
+<!-- HARI KE 23 END -->
+
+<!-- HARI KE 24 START -->
+ <div class="hari_ke_24">
+    <div class="container">
+        <h2>Hari ke 24</h2>
+        <p class="tanggal">Kamis, 1/08/2024</p>
+
+        <p>Hari ini kami diliburkan karena Pak Rudy sedang ada urusan diluar</p>
+        <p>Terutama terdapat masalah dalam Pam Air di kantor</p>
+    </div>
+ </div>
+<!-- HARI KE 24 END -->
+
+
+<!-- Hari KE 25 START -->
+ <div class="hari_ke_25">
+    <div class="container">
+        <h2>Hari ke 25</h2>
+        <p class="tanggal">Jumat, 2/08/2024</p>
+
+        <p>Pagi hari ini Pak Rudy tidak dapat hadir</p>
+        <p>Karena masih ada urusan juga diluar, <br>
+        jadi kami diminta untuk diskusi terkait Project DSC kami</p>
+
+        <!-- Memasukkan gambar KELOMPOK -->
+    </div>
+ </div>
+<!-- Hari KE 25 END -->
 </body>
 </html>
